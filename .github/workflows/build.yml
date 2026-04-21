@@ -26,7 +26,8 @@ jobs:
         run: |
           pyinstaller --onefile --windowed --name SearchBot `
             --collect-all PyQt6 `
-            --hidden-import webdriver_manager.chrome `
+            --collect-all selenium `
+            --collect-all webdriver_manager `
             search_bot.py
 
       - name: Upload artifact
