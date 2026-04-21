@@ -24,8 +24,7 @@ jobs:
 
       - name: Build EXE
         run: |
-          pyinstaller --onefile --windowed --name SearchBot `
-            --collect-all PyQt6 `
+          pyinstaller --onefile --name SearchBot `
             --collect-all selenium `
             --collect-all webdriver_manager `
             search_bot.py
